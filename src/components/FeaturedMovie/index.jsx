@@ -12,6 +12,12 @@ export default ({ item }) => {
   }
 
 
+  let description = item.overview;
+
+  if (description.length > 200) {
+    description = description.substring(0, 200) + "...";
+  }
+
   return (
     <section
       className="featured"
@@ -37,7 +43,7 @@ export default ({ item }) => {
               {/*verifica se tem 1 ou + temporadas para colocar o S */}
             </div>
 
-            <div className="featured--description">{item.overview}</div>
+            <div className="featured--description">{description}</div>
             {/*pega a descricao */}
 
             <div className="featured--buttons">
@@ -46,7 +52,7 @@ export default ({ item }) => {
             </div>
             {/*botoes de assistir, adicionar, favoritos */}
 
-            <div className="featured-genres"><strong>Generos: </strong>{genres.join(', ')}</div>
+            <div className="featured--genres"><strong>Generos: </strong>{genres.join(', ')}</div>
             {/*pega os generos */}
           </div>
         </div>

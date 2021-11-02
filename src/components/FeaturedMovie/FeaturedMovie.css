@@ -38,16 +38,16 @@
   max-width: 40%;
 }
 
-.featured--points,
-.featured-year,
-.featured--seasons{
+.featured--info .featured--points,
+.featured--info .featured-year,
+.featured--info .featured--seasons{
   margin-right: 1rem;
   display: inline-block;
 }
-.featured--points{
+.featured--info .featured--points{
   color:#46d369;
 }
-.featured--description{
+.featured--info .featured--description{
   margin-top: 1rem;
   font-size: 1.25rem;
   color:#999;
@@ -56,11 +56,11 @@
 }
 
 /*botoes-buttons*/
-.featured--buttons{
+.featured--info .featured--buttons{
   margin-top: 1rem;
 }
-.featured--watchButton,
-.featured--myListButton{
+.featured--info .featured--watchButton,
+.featured--info .featured--myListButton{
   display: inline-block;
   font-size: 1.25rem;
   font-weight: bold;
@@ -72,22 +72,22 @@
   transition: all ease 0.2s;
 }
 
-.featured--watchButton{
+.featured--info .featured--watchButton{
   background: #f2f2f2;
   color: #111;
 }
-.featured--myListButton{
+.featured--info .featured--myListButton{
   background: #333;
   color: #f2f2f2;
 }
 
- .featured--watchButton:hover,
-.featured--myListButton:hover{
+ .featured--info .featured--watchButton:hover,
+.featured--info .featured--myListButton:hover{
   opacity: 0.8;
 }
 
 /*generos-genres*/
-.featured-genres{
+.featured--info .featured--genres{
   margin-top: 1rem;
   font-size: 1.25rem;
   color:#999
@@ -97,35 +97,39 @@
 
 @media only screen and (max-width: 760px){
   .featured{
-    height: 90vh;
-    width: 90vw;
+    height: 70vh;
+    width: 100vw;
 
   }
 
   .featured--name{
     font-size: 2.5rem;
+    max-width: 100%;
+    margin-top: 3rem;
   }
   .featured--info{
+
+    max-width: 100vw;
     font-size: 1rem;
     height: 90vh;
     width: 100%;
   }
 
-  .featured--description{
-    font-size: .75rem;
+  .featured--info .featured--description{
+    font-size: 1rem;
     max-width: 100vw;
     margin-right: 2rem;
-    margin-left: 2rem;
+ 
   }
 
-  .featured--watchButton,
-  .featured--myListButton{ 
-    font-size: .75rem;
-    padding: .5rem .75rem;
+  .featured--info .featured--watchButton,
+  .featured--info .featured--myListButton{ 
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
 
-  .featured--genres{
-    font-size: .75rem;
+  .featured--info .featured--genres{
+    font-size: 1rem;
   }
 
 
